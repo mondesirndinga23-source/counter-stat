@@ -1,0 +1,140 @@
+.app {
+  width: min(100% - 2rem, 31rem);
+  margin: 0 auto;
+  padding: 0.8rem 0 2rem;
+  text-align: center;
+}
+
+.page-title {
+  margin: 0 0 0.45rem;
+  color: #212529;
+  font-size: clamp(1.55rem, 4vw, 2rem);
+  font-weight: 400;
+}
+
+.visibility-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-bottom: 1.8rem;
+}
+
+.counter-section {
+  width: 100%;
+}
+
+.counter-card {
+  min-height: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 0.2rem;
+  background: #fff;
+}
+
+.counter-value {
+  margin: 0 0 0.75rem;
+  color: #111;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.counter-controls {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.counter-button {
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #aebbb7;
+  border-radius: 0.25rem;
+  background: #fff;
+  color: #313b38;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.increment-button {
+  border-color: #9dbbb0;
+  color: #507d6d;
+}
+
+.decrement-button {
+  border-color: #d7aeb2;
+  color: #9c6268;
+}
+
+.reset-button {
+  margin-top: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  border: 0;
+  border-radius: 0.2rem;
+  background: #111;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.counter-message {
+  margin: 0.55rem 0 0;
+  color: #111;
+  font-size: 1.25rem;
+}
+
+.counter-time {
+  margin: 0.45rem 0 0.5rem;
+  color: #212529;
+  font-size: 1.5rem;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.25rem;
+}
+
+.person-card {
+  width: 11.5rem;
+  padding: 1.7rem 0.65rem 0.6rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 0.2rem;
+  background: #fff;
+  text-align: left;
+}
+
+.person-image {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto 1.7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person-details h2 {
+  margin: 0 0 0.35rem;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.person-profession,
+.person-bio {
+  margin: 0 0 0.55rem;
+  color: #212529;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 400px) {
+  .app {
+    width: min(100% - 1.25rem, 31rem);
+  }
+
+  .counter-time {
+    font-size: 1.3rem;
+  }
+}
